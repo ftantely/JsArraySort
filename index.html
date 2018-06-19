@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<p id="twelve"></p>
+<p id="thirteen"></p>
+<button onclick="myFunction1()">Test</button>
+
+
+<script>
+
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"]
+
+    document.getElementById("twelve").innerHTML=fruits.sort();
+    document.getElementById("twelve").innerHTML=fruits.reverse();
+
+    // function myFunction() {
+    //     fruits.sort();
+    //     fruits.reverse()
+    //     document.getElementById("twelve").innerHTML=fruits;
+    // }
+    // myFunction();
+
+
+    var points = [40, 100, 1, 5, 25, 10]
+    document.getElementById("thirteen").innerHTML=points;
+
+    function myFunction1() {
+        points.sort( function ( a,b) {return a -b});
+        document.getElementById("thirteen").innerHTML=points;
+
+    }
+
+</script>
+</body>
+</html>
